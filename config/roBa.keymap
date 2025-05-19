@@ -50,7 +50,7 @@
 &mo 1               &kp LEFT_ALT  &kp LCTRL  &lt 2 TAB  &mo 3  &td_lng1_lng2      &kp BACKSPACE  &mt LEFT_COMMAND SPACE                             &kp LEFT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&kp C_MUTE &inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         ARROW {
