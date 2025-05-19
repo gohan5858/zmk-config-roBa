@@ -15,7 +15,8 @@
 };
 
 / {
-    combos {};
+    combos {
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -31,6 +32,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             bindings = <&kp LANG1>, <&kp LANG2>;
+
             tap-count = <2>;
             label = "TD_LNG1_LNG2";
         };
@@ -41,10 +43,10 @@
 
         default_layer {
             bindings = <
-&mt LCTRL Q         &kp W         &kp E      &kp R      &kp T                                                                      &kp Y                   &kp U  &lt 0 I    &kp O    &kp P
-&mt LEFT_COMMAND A  &kp S         &kp D      &kp F      &kp G                    &kp LS(LG(S))                      &kp MINUS      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z    &kp X         &kp C      &kp V      &kp B                    &kp COLON                          &kp SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
-&mo 1               &kp LEFT_ALT  &kp LCTRL  &lt 2 TAB  &mo 3 &td_lng1_lng2      &kp BACKSPACE  &mt LEFT_COMMAND SPACE  &kp LEFT_ALT
+&mt LCTRL Q         &kp W         &kp E      &kp R      &kp T                                    &kp Y                   &kp U  &lt 0 I    &kp O    &kp P
+&mt LEFT_COMMAND A  &kp S         &kp D      &kp F      &kp G  &kp LS(LG(S))      &kp MINUS      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z    &kp X         &kp C      &kp V      &kp B  &kp COLON          &kp SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&mo 1               &kp LEFT_ALT  &kp LCTRL  &lt 2 TAB  &mo 3  &td_lng1_lng2      &kp BACKSPACE  &mt LEFT_COMMAND SPACE                             &kp LEFT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -79,10 +81,10 @@
 
         BT {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
 
