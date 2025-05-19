@@ -31,9 +31,8 @@
         td_lng1_lng2: td_lng1_lng2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&kp LANG1>, <&kp LANG2>;
-
-            tap-count = <2>;
             label = "TD_LNG1_LNG2";
         };
     };
