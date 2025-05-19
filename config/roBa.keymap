@@ -45,7 +45,7 @@
             bindings = <
 &mt LCTRL Q         &kp W         &kp E      &kp R      &kp T                                    &kp Y                   &kp U  &lt 0 I    &kp O    &kp P
 &mt LEFT_COMMAND A  &kp S         &kp D      &kp F      &kp G  &kp LS(LG(S))      &kp MINUS      &kp H                   &kp J  &kp K      &kp L    &kp ENTER
-&mt LEFT_SHIFT Z    &kp X         &kp C      &kp V      &kp B  &kp COLON          &kp SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
+&mt LEFT_SHIFT Z    &kp X         &kp C      &kp V      &kp B  &mo SCROLL         &kp SEMICOLON  &kp N                   &kp M  &kp COMMA  &kp DOT  &mt LEFT_SHIFT SLASH
 &mo 1               &kp LEFT_ALT  &kp LCTRL  &lt 2 TAB  &mo 3  &td_lng1_lng2      &kp BACKSPACE  &mt LEFT_COMMAND SPACE                             &kp LEFT_ALT
             >;
 
