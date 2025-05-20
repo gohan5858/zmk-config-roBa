@@ -17,10 +17,11 @@
 
 / {
     combos {
-        D_F_ESC {
+        compatible = "zmk,combos";
+        combo_esc {
             timeout-ms = <50>;
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>;
         };
     };
 
