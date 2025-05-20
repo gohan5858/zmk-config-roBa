@@ -39,6 +39,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        D_F_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
