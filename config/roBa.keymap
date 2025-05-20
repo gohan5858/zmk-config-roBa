@@ -17,6 +17,10 @@
 
 / {
     combos {
+        D_F_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
@@ -36,15 +40,6 @@
             bindings = <&kp LANG1>, <&kp LANG2>;
 
             label = "TD_LNG1_LNG2";
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        D_F_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <13 14>;
         };
     };
 
