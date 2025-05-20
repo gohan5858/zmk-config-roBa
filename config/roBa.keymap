@@ -18,6 +18,7 @@
 / {
     combos {
         D_F_ESC {
+            timeout-ms = <50>;
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
